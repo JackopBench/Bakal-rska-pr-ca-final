@@ -9,7 +9,7 @@ public class BarController : MonoBehaviour
     public float drainSpeed = 0.5f;
 
     private bool filling = false;
-    private bool hasChased = false;   // 🔥 aby sa nevolalo 100x
+    private bool hasChased = false;
 
     public NPCController npcController;
 
@@ -35,14 +35,12 @@ public class BarController : MonoBehaviour
         leftBar.fillAmount = Mathf.Clamp01(leftBar.fillAmount);
         rightBar.fillAmount = Mathf.Clamp01(rightBar.fillAmount);
 
-        // 🔥 keď sa naplní prvýkrát
         if (leftBar.fillAmount >= 1f && !hasChased)
         {
             npcController.StartChase();
             hasChased = true;
         }
 
-        // 🔥 keď sa úplne vyprázdni
         if (leftBar.fillAmount <= 0f && hasChased)
         {
             npcController.StopChase();

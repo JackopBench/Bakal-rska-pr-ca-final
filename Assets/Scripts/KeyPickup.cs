@@ -2,11 +2,16 @@ using UnityEngine;
 
 public class KeyPickup : MonoBehaviour
 {
-    public KeyCounter keyCounter;
+    private KeyCounter keyCounter;
+
+    void Start()
+    {
+        keyCounter = FindFirstObjectByType<KeyCounter>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("hitBox"))
+        if (other.CompareTag("hitBox"))
         {
             keyCounter.AddKey();
             Destroy(gameObject);

@@ -16,17 +16,20 @@ public class NPCController : MonoBehaviour
     private Animator animator;
 
     void Start()
-    {
-        agent = GetComponent<NavMeshAgent>();
-        animator = GetComponentInChildren<Animator>();
+{
+    agent = GetComponent<NavMeshAgent>();
+    animator = GetComponentInChildren<Animator>();
 
-        if (waypoints.Length > 0)
-        {
-            agent.SetDestination(waypoints[currentIndex].position);
-        }
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
+    player = GameObject.FindGameObjectWithTag("Player").transform;
+
+    if (waypoints.Length > 0)
+    {
+        agent.SetDestination(waypoints[currentIndex].position);
     }
+
+    agent.updateRotation = false;
+    agent.updateUpAxis = false;
+}
 
     void Update()
 {

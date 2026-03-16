@@ -12,12 +12,19 @@ public class pivot : MonoBehaviour
     void Start()
     {
         agent = GetComponentInParent<NavMeshAgent>();
-        enemyTransform = transform.parent; // Enemy objekt
+        enemyTransform = transform.parent;
+
+        // 🔧 nájdi hráča automaticky
+        if (player == null)
+        {
+            GameObject p = GameObject.FindGameObjectWithTag("Player");
+            if (p != null)
+                player = p.transform;
+        }
     }
 
     void Update()
     {
-        // ROTÁCIA PIVOTU
         if (npcController.IsChasing())
         {
             Vector2 direction = player.position - transform.position;
@@ -35,6 +42,5 @@ public class pivot : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0f, 0f, angle - 180f);
             }
         }
-
-}
+    }
 }
