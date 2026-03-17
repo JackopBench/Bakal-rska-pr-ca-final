@@ -20,8 +20,6 @@ public class KeySpawner : MonoBehaviour
             {
                 usedIndexes.Add(randomIndex);
 
-                // DEBUG
-                Debug.Log(spawnPoints[randomIndex].name + " : " + spawnPoints[randomIndex].position);
 
                 Instantiate(
                     keyPrefab,

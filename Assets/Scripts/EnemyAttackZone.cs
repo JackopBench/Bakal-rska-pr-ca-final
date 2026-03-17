@@ -12,6 +12,8 @@ public class EnemyAttackZone : MonoBehaviour
 
     void Start()
     {
+        agent = GetComponentInParent<NavMeshAgent>();
+        
         if (barController == null)
             barController = FindFirstObjectByType<BarController>();
     }

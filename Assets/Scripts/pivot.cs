@@ -14,7 +14,6 @@ public class pivot : MonoBehaviour
         agent = GetComponentInParent<NavMeshAgent>();
         enemyTransform = transform.parent;
 
-        // 🔧 nájdi hráča automaticky
         if (player == null)
         {
             GameObject p = GameObject.FindGameObjectWithTag("Player");

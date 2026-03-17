@@ -104,11 +104,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3899631862359159880}
   - component: {fileID: 2577718978510413587}
-  - component: {fileID: 2885415848064461584}
   - component: {fileID: 1282723872396213885}
   - component: {fileID: 2818965934287370188}
   - component: {fileID: 1414541083515589761}
   - component: {fileID: 2575524810126444487}
+  - component: {fileID: 5022870845442410256}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -192,28 +192,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!195 &2885415848064461584
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6137877469088219642}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.2
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 29.91667
-  m_BaseOffset: 14.958335
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 1
 --- !u!114 &1282723872396213885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,6 +304,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!195 &5022870845442410256
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137877469088219642}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 3
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 29.91667
+  m_BaseOffset: 14.958335
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 0
 --- !u!1 &6949602913295474901
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttackZone
   enemyAnimator: {fileID: 2575524810126444487}
-  agent: {fileID: 2885415848064461584}
+  agent: {fileID: 0}
   health: 4
   barController: {fileID: 0}
   npcController: {fileID: 1282723872396213885}

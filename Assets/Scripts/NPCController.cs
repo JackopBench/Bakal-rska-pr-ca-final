@@ -12,15 +12,26 @@ public class NPCController : MonoBehaviour
     private bool waiting;
     public Transform player;
     private bool isChasing = false;
+    public DDAManager ddaManager;
+    public float baseSpeed = 2f;
+    public float maxSpeed = 6f;
 
     private Animator animator;
 
     void Start()
 {
+    ddaManager = FindFirstObjectByType<DDAManager>();
     agent = GetComponent<NavMeshAgent>();
+   
     animator = GetComponentInChildren<Animator>();
 
-    player = GameObject.FindGameObjectWithTag("Player").transform;
+    GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+
+    if (playerObj != null)
+    {
+        player = playerObj.transform;
+    }
+  
 
     if (waypoints.Length > 0)
     {
@@ -33,10 +44,12 @@ public class NPCController : MonoBehaviour
 
     void Update()
 {
+    UpdateSpeed();
     animator.SetBool("isChasing", isChasing);
 
     if (isChasing)
     {
+        agent.speed *= 1.3f;
         agent.SetDestination(player.position);
     }
     else
@@ -63,7 +76,7 @@ public class NPCController : MonoBehaviour
         }
     }
 
-    // 🔥 Rotácia sa vykoná vždy
+    
     Vector3 currentRotation = transform.eulerAngles;
 
     if (agent.velocity.x > 0.01f)
@@ -98,6 +111,31 @@ public class NPCController : MonoBehaviour
                 agent.SetDestination(waypoints[currentIndex].position);
             }   
     }
+
+    void UpdateSpeed()
+    {
+        if (ddaManager == null) return;
+
+        int difficulty = ddaManager.GetDifficultyLevel();
+
+        switch (difficulty)
+        {
+            case 1: agent.speed = 2f; break;
+            case 2: agent.speed = 2.2f; break;
+            case 3: agent.speed = 2.4f; break;
+            case 4: agent.speed = 2.6f; break;
+            case 5: agent.speed = 2.8f; break;
+            case 6: agent.speed = 3f; break;
+            case 7: agent.speed = 3.2f; break;
+            case 8: agent.speed = 3.4f; break;
+            case 9: agent.speed = 3.6f; break;
+            case 10: agent.speed = 4f; break;
+
+            default:
+                agent.speed = 2f;
+                break;
+        }
+}
 
     public bool IsChasing()
     {

@@ -12,8 +12,13 @@ public class PotionSpawner : MonoBehaviour
 
     private List<int> activeSpawnPoints = new List<int>();
 
+    public DDAManager ddaManager;
+    public float minRespawnTime = 15f;
+    public float maxRespawnTime = 70f;
+
     void Start()
     {
+        ddaManager = FindFirstObjectByType<DDAManager>();
         for (int i = 0; i < maxPotions; i++)
         {
             SpawnRandomPotion();
@@ -51,7 +56,18 @@ public class PotionSpawner : MonoBehaviour
 
     IEnumerator RespawnPotion()
     {
-        yield return new WaitForSeconds(respawnTime);
+        yield return new WaitForSeconds(GetRespawnTime());
         SpawnRandomPotion();
+    }
+    
+    float GetRespawnTime()
+    {
+        if (ddaManager == null) return respawnTime;
+
+        int difficulty = ddaManager.GetDifficultyLevel();
+
+        float t = (difficulty - 1) / 9f;
+
+        return Mathf.Lerp(minRespawnTime, maxRespawnTime, t);
     }
 }

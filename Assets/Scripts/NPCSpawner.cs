@@ -9,18 +9,26 @@ public class NPCSpawner : MonoBehaviour
     public Transform[] waypoints;
 
     public int npcCount = 3;
-
+    public DDAManager ddaManager;
+    public int minNPC = 1;
+    public int maxNPC = 4;
     private List<GameObject> spawnedNPCs = new List<GameObject>();
+
+    void Start()
+    {
+        ddaManager = FindFirstObjectByType<DDAManager>();
+    }
 
     void Update()
     {
-        // spawn keď je ich málo
+        npcCount = GetTargetNPCCount();
+        
         while (spawnedNPCs.Count < npcCount)
         {
             SpawnNPC();
         }
 
-        // zmaž keď je ich veľa
+        
         while (spawnedNPCs.Count > npcCount)
         {
             GameObject npc = spawnedNPCs[0];
@@ -39,10 +47,23 @@ public class NPCSpawner : MonoBehaviour
             Quaternion.identity
         );
 
-        // nastav waypointy
+        
         NPCController controller = npc.GetComponent<NPCController>();
         controller.waypoints = waypoints;
 
         spawnedNPCs.Add(npc);
+    }
+
+    int GetTargetNPCCount()
+    {
+        if (ddaManager == null) return npcCount;
+
+        int difficulty = ddaManager.GetDifficultyLevel();
+
+        float t = (difficulty - 1) / 9f;
+
+        float value = Mathf.Lerp(minNPC, maxNPC, t);
+
+        return Mathf.RoundToInt(value);
     }
 }

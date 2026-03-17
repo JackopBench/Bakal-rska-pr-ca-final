@@ -4,7 +4,13 @@ public class HealthPotion : MonoBehaviour
 {
     public PotionSpawner spawner;
     public int spawnIndex;
+    public DDAManager ddaManager;
 
+
+    void Start()
+    {
+        ddaManager = FindFirstObjectByType<DDAManager>();
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("hitBox")) return;
@@ -14,9 +20,10 @@ public class HealthPotion : MonoBehaviour
 
         bool healed = health.Heal();
 
-        // potion sa zoberie iba ak sa hráč naozaj healne
         if (healed)
         {
+            ddaManager.OnPotionCollected();
+            
             spawner.PotionTaken(spawnIndex);
             Destroy(gameObject);
         }

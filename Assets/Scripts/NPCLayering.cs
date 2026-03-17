@@ -7,11 +7,9 @@ public class EnemyLayerZone : MonoBehaviour
 
         private void OnTriggerEnter2D(Collider2D other)
 {
-    Debug.Log("Niečo vstúpilo: " + other.name);
 
     if (other.CompareTag("Enemy"))
     {
-        Debug.Log("Enemy vstupil do zony");
         SetEnemyOrder(other, enterOrder);
     }
 }
@@ -26,7 +24,7 @@ public class EnemyLayerZone : MonoBehaviour
 
     void SetEnemyOrder(Collider2D col, int order)
     {
-        // zmení order na všetkých SpriteRenderer v enemy (bez ohľadu kde sú)
+        
         SpriteRenderer[] renderers = col.GetComponentsInChildren<SpriteRenderer>();
 
         foreach (SpriteRenderer sr in renderers)

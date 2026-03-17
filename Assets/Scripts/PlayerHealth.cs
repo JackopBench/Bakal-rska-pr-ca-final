@@ -5,6 +5,13 @@ public class PlayerHealth : MonoBehaviour
 {
     public Image[] hpBars;
     public int health = 3;
+    private DDAManager ddaManager;
+
+    void Start()
+    {
+        ddaManager = FindFirstObjectByType<DDAManager>();
+    }
+
 
     public void TakeDamage()
     {
@@ -14,7 +21,11 @@ public class PlayerHealth : MonoBehaviour
         if (health >= 0 && health < hpBars.Length)
         {
             hpBars[health].enabled = false;
-            Debug.Log("Enemy hitol hráča");
+        }
+
+        if (ddaManager != null)
+        {
+            ddaManager.OnDamageTaken();
         }
     }
 
