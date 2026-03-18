@@ -98,18 +98,23 @@ public class NPCController : MonoBehaviour
 
     public void StartChase()
     {
+        if (isChasing) return; // 🔥 dôležité
+
         isChasing = true;
+        MusicManager.instance.StartChase();
     }
 
     public void StopChase()
     {
-        isChasing = false;
+        if (!isChasing) return; // 🔥 dôležité
 
-    
+        isChasing = false;
+        MusicManager.instance.StopChase();
+
         if (waypoints.Length > 0)
-            {
-                agent.SetDestination(waypoints[currentIndex].position);
-            }   
+        {
+            agent.SetDestination(waypoints[currentIndex].position);
+        }   
     }
 
     void UpdateSpeed()

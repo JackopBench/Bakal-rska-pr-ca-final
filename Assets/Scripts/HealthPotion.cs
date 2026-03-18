@@ -6,10 +6,13 @@ public class HealthPotion : MonoBehaviour
     public int spawnIndex;
     public DDAManager ddaManager;
 
+    public AudioSource pickupSound;
+
 
     void Start()
     {
         ddaManager = FindFirstObjectByType<DDAManager>();
+        pickupSound = GetComponent<AudioSource>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,6 +26,12 @@ public class HealthPotion : MonoBehaviour
         if (healed)
         {
             ddaManager.OnPotionCollected();
+            
+            AudioSource.PlayClipAtPoint(
+            pickupSound.clip,
+            transform.position,
+            SFXManager.instance.sfxVolume
+        );
             
             spawner.PotionTaken(spawnIndex);
             Destroy(gameObject);

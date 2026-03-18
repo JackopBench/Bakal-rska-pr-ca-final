@@ -25,6 +25,12 @@ public class PlayerController : MonoBehaviour
     public DDAManager ddaManager;
     public Light2D visionLight;
     public float visionSmoothSpeed = 3f;
+    
+    // Audio krokov
+    public AudioSource footstepAudio;
+    public float normalPitch = 1f;
+    public float sprintPitch = 1.5f;
+    public float baseFootstepVolume = 1f;
 
     void Start()
     {
@@ -51,10 +57,12 @@ public class PlayerController : MonoBehaviour
         spriteRenderer.flipX = false;
     else if (movement.x < 0)
         spriteRenderer.flipX = true;
+
 }
 
     void FixedUpdate()
     {
+
         if (stamina <= 0f)
             canSprint = false;
 
@@ -66,6 +74,22 @@ public class PlayerController : MonoBehaviour
 
         rb.linearVelocity = movement * currentSpeed;
 
+        if (SFXManager.instance != null)
+            footstepAudio.volume = baseFootstepVolume * SFXManager.instance.sfxVolume;
+
+        if (movement != Vector2.zero)
+        {
+            footstepAudio.pitch = sprinting ? sprintPitch : normalPitch;
+
+            if (!footstepAudio.isPlaying)
+                footstepAudio.Play();
+        }
+        else
+        {
+            if (footstepAudio.isPlaying)
+                footstepAudio.Stop();
+        }
+
         if (sprinting && movement != Vector2.zero)
             stamina -= staminaDrain * Time.fixedDeltaTime;
         else
@@ -73,7 +97,7 @@ public class PlayerController : MonoBehaviour
 
         stamina = Mathf.Clamp(stamina, 0f, maxStamina);
         staminaFill.fillAmount = stamina / maxStamina;
-    }
+    }   
 
     void UpdateVisionLight()
     {
