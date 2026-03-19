@@ -118,4 +118,50 @@ public class MusicManager : MonoBehaviour
         from.volume = 0f;
         to.volume = targetToVolume;
     }
+
+    public void StopAllMusicSmooth()
+{
+    if (currentFade != null)
+        StopCoroutine(currentFade);
+
+    currentFade = StartCoroutine(FadeOutAll());
+}
+
+IEnumerator FadeOutAll()
+{
+    float time = 0;
+
+    float startBg = backgroundSource.volume;
+    float startChase = chaseSource.volume;
+
+    while (time < fadeDuration)
+    {
+        time += Time.unscaledDeltaTime; // 👈 dôležité!
+
+        float t = time / fadeDuration;
+
+        backgroundSource.volume = Mathf.Lerp(startBg, 0f, t);
+        chaseSource.volume = Mathf.Lerp(startChase, 0f, t);
+
+        yield return null;
+    }
+
+    backgroundSource.Stop();
+    chaseSource.Stop();
+}
+
+public void PlayBackgroundMusic()
+{
+    backgroundSource.volume = backgroundVolume * masterVolume;
+    chaseSource.volume = 0f;
+
+    if (!backgroundSource.isPlaying)
+        backgroundSource.Play();
+
+    if (!chaseSource.isPlaying)
+        chaseSource.Play();
+
+    isChaseActive = false;
+    chaseCount = 0;
+}
 }

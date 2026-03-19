@@ -38,21 +38,34 @@ public class NPCSpawner : MonoBehaviour
     }
 
     void SpawnNPC()
+{
+    int randomIndex = Random.Range(0, spawnPoints.Length);
+
+    GameObject npc = Instantiate(
+        npcPrefab,
+        spawnPoints[randomIndex].position,
+        Quaternion.identity
+    );
+
+    NPCController controller = npc.GetComponent<NPCController>();
+
+    
+    Transform[] shuffledWaypoints = new Transform[waypoints.Length];
+    waypoints.CopyTo(shuffledWaypoints, 0);
+
+    
+    for (int i = 0; i < shuffledWaypoints.Length; i++)
     {
-        int randomIndex = Random.Range(0, spawnPoints.Length);
-
-        GameObject npc = Instantiate(
-            npcPrefab,
-            spawnPoints[randomIndex].position,
-            Quaternion.identity
-        );
-
-        
-        NPCController controller = npc.GetComponent<NPCController>();
-        controller.waypoints = waypoints;
-
-        spawnedNPCs.Add(npc);
+        int rnd = Random.Range(i, shuffledWaypoints.Length);
+        Transform temp = shuffledWaypoints[i];
+        shuffledWaypoints[i] = shuffledWaypoints[rnd];
+        shuffledWaypoints[rnd] = temp;
     }
+
+    controller.waypoints = shuffledWaypoints;
+
+    spawnedNPCs.Add(npc);
+}
 
     int GetTargetNPCCount()
     {

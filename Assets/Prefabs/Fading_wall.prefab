@@ -94,5 +94,5 @@ MonoBehaviour:
   objectsToFade:
   - {fileID: 0}
   fadedAlpha: 0.3
-  playerEnterOrder: 0
+  playerEnterOrder: 2
   playerExitOrder: 5

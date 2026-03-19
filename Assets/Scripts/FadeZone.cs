@@ -5,26 +5,34 @@ public class FadeZone : MonoBehaviour
     public GameObject[] objectsToFade;
     public float fadedAlpha = 0.3f;
 
-    public int playerEnterOrder = 0;
+    public int playerEnterOrder = 2;
     public int playerExitOrder = 5;
 
     private void OnTriggerEnter2D(Collider2D other)
+{
+    if (other.CompareTag("Player"))
     {
-        if (other.CompareTag("Player"))
-        {
-            SetAlpha(fadedAlpha);
-            SetPlayerOrder(other, playerEnterOrder);
-        }
+        SetAlpha(fadedAlpha);
+        SetPlayerOrder(other, playerEnterOrder);
     }
+    else if (other.CompareTag("Enemy"))
+    {
+        SetPlayerOrder(other, playerEnterOrder);
+    }
+}
 
     private void OnTriggerExit2D(Collider2D other)
+{
+    if (other.CompareTag("Player"))
     {
-        if (other.CompareTag("Player"))
-        {
-            SetAlpha(1f);
-            SetPlayerOrder(other, playerExitOrder);
-        }
+        SetAlpha(1f);
+        SetPlayerOrder(other, playerExitOrder);
     }
+    else if (other.CompareTag("Enemy"))
+    {
+        SetPlayerOrder(other, playerExitOrder);
+    }
+}
 
     void SetAlpha(float alpha)
     {

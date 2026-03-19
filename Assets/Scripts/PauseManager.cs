@@ -46,6 +46,12 @@ public class PauseManager : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1f;
+
+        if (MusicManager.instance != null)
+        {
+            MusicManager.instance.PlayBackgroundMusic();
+        }
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
