@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         ddaManager = FindFirstObjectByType<DDAManager>();
+        
     }
 
     public void TakeDamage()
@@ -53,6 +54,11 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator GameOver()
 {
     float alpha = 0f;
+
+    if (ddaManager != null)
+    {
+        ddaManager.OnGameOver();
+    }
 
     
     if (MusicManager.instance != null)

@@ -3,22 +3,22 @@ using UnityEngine;
 public class DDAManager : MonoBehaviour
 {
     // DificultyScore premenne
-    public float difficultyScore = 0f;
+    public float difficultyScore = 50f;
     public float minScore = 0f;
     public float maxScore = 100f;
 
     // Damage not taken
     public float noDamageThreshold = 15f;
-    public float noDamageReward = 2f; 
-    public float timeSinceLastHit = 0f;
+    public float noDamageReward = 5f; 
+    public float timeSinceLastHit = 15f;
 
     // Player escape
-    public float escapeReward = 3f;
+    public float escapeReward = 5f;
 
     // No progress
     public float noProgressThreshold = 20f;
-    public float noProgressPenalty = -3f;
-    private float timeSinceLastProgress = 0f;
+    public float noProgressPenalty = -5f;
+    private float timeSinceLastProgress = 20f;
     private int lastDifficulty = -1;
 
     
@@ -69,7 +69,7 @@ public class DDAManager : MonoBehaviour
 
     public void OnDamageTaken()
     {
-        float change = -5f;
+        float change = -8f;
         difficultyScore += change;
         ClampScore();
         Debug.Log($"Player got hit -> -5, dificulty score = {difficultyScore}");
@@ -79,7 +79,7 @@ public class DDAManager : MonoBehaviour
 
     public void OnPotionCollected()
     {
-        float change = -5f;
+        float change = -8f;
         difficultyScore += change;
 
         Debug.Log($"[DDA] Potion collected -> {change}, difficulty score = {difficultyScore}");
@@ -105,6 +105,15 @@ public class DDAManager : MonoBehaviour
             timeSinceLastProgress = 0f;
         }   
     }
+
+    public void OnGameOver()
+{
+    float change = -30f;
+    difficultyScore += change;
+    ClampScore();
+
+    Debug.Log($"[DDA] Game Over → {change} | Score: {difficultyScore}");
+}
 
     public int GetDifficultyLevel()
     {

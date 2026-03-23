@@ -209,6 +209,11 @@ MonoBehaviour:
   - {fileID: 0}
   waitTime: 1
   player: {fileID: 0}
+  hearingRadius: 5
+  investigateWaitTime: 2
+  ddaManager: {fileID: 0}
+  baseSpeed: 2
+  maxSpeed: 6
 --- !u!61 &2818965934287370188
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public float staminaRegen = 15f;
     public float minStaminaToSprint = 10f;
     public Image staminaFill;
+    public bool IsSprinting { get; private set; }
 
     private float stamina;
     private bool canSprint = true;
@@ -69,7 +70,8 @@ public class PlayerController : MonoBehaviour
         if (stamina >= minStaminaToSprint)
             canSprint = true;
 
-        bool sprinting = Input.GetKey(KeyCode.LeftShift) && canSprint;
+        IsSprinting = Input.GetKey(KeyCode.LeftShift) && canSprint;
+bool sprinting = IsSprinting;
         float currentSpeed = sprinting ? speed * sprintMultiplier : speed;
 
         rb.linearVelocity = movement * currentSpeed;
