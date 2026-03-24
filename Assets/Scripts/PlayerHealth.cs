@@ -33,7 +33,7 @@ public class PlayerHealth : MonoBehaviour
             ddaManager.OnDamageTaken();
         }
 
-        // 👉 GAME OVER CHECK
+        
         if (health <= 0)
         {
             StartCoroutine(GameOver());
@@ -52,39 +52,36 @@ public class PlayerHealth : MonoBehaviour
     }
 
     IEnumerator GameOver()
-{
-    float alpha = 0f;
-
-    if (ddaManager != null)
     {
-        ddaManager.OnGameOver();
-    }
+        float alpha = 0f;
+
+        if (ddaManager != null)
+        {
+            ddaManager.OnGameOver();
+        }
 
     
-    if (MusicManager.instance != null)
-    {
-        MusicManager.instance.StopAllMusicSmooth();
-    }
+        if (MusicManager.instance != null)
+        {
+            MusicManager.instance.StopAllMusicSmooth();
+        }
 
    
-    while (alpha < 1f)
-    {
-        alpha += Time.deltaTime * fadeSpeed;
+        while (alpha < 1f)
+        {
+            alpha += Time.deltaTime * fadeSpeed;
 
-        Color c = gameOverPanel.color;
-        c.a = alpha;
-        gameOverPanel.color = c;
+            Color c = gameOverPanel.color;
+            c.a = alpha;
+            gameOverPanel.color = c;
 
-        yield return null;
+            yield return null;
+        }
+
+        yield return new WaitForSecondsRealtime(1.5f);
+
+        gameOverUI.SetActive(true);
+
+        Time.timeScale = 0f;
     }
-
-    
-    yield return new WaitForSecondsRealtime(1.5f);
-
-    
-    gameOverUI.SetActive(true);
-
-    
-    Time.timeScale = 0f;
-}
 }

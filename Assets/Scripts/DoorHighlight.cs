@@ -16,7 +16,7 @@ public class DoorInteract : MonoBehaviour
 
     void Start()
     {
-        // nájde SpriteRenderer (aj ak je na child objekte)
+        
         sr = GetComponentInChildren<SpriteRenderer>();
 
         if (sr != null)
@@ -24,7 +24,7 @@ public class DoorInteract : MonoBehaviour
         else
             Debug.LogError("SpriteRenderer not found on Door!");
 
-        // ✅ FIX: správny názov premennej (malé i)
+        
         if (interactText == null)
             interactText = GameObject.Find("InteractText");
 
@@ -33,14 +33,12 @@ public class DoorInteract : MonoBehaviour
         else
             Debug.LogError("InteractText not found in scene!");
 
-        // nájde GameManager
         if (gameManager == null)
             gameManager = FindFirstObjectByType<GameManager>();
 
         if (gameManager == null)
             Debug.LogError("GameManager not found!");
 
-        // nájde KeyCounter
         if (keyCounter == null)
             keyCounter = FindFirstObjectByType<KeyCounter>();
 

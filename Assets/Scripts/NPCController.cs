@@ -19,7 +19,7 @@ public class NPCController : MonoBehaviour
     [Header("States")]
     private bool isChasing = false;
 
-    // 🔊 INVESTIGATE (hearing)
+    
     public float hearingRadius = 10f;
     public float investigateWaitTime = 2f;
 
@@ -69,7 +69,7 @@ public class NPCController : MonoBehaviour
         animator.SetBool("isChasing", isChasing);
         animator.SetBool("isInvestigating", isInvestigating);
 
-        // 🔊 DETEKCIA ZVUKU (len keď nechase-uje)
+        
         if (!isChasing && !isInvestigating && playerController != null)
         {
             float distance = Vector3.Distance(transform.position, player.position);
@@ -82,10 +82,10 @@ public class NPCController : MonoBehaviour
             }
         }
 
-        // 🧠 STATE LOGIC
+        
         if (isChasing)
         {
-            agent.speed = baseSpeed * 1.3f; // FIX BUG (žiadne násobenie donekonečna)
+            agent.speed = baseSpeed * 1.3f;
             agent.SetDestination(player.position);
         }
         else if (isInvestigating)
@@ -97,7 +97,7 @@ public class NPCController : MonoBehaviour
             Patrol();
         }
 
-        // 🔄 otočenie sprite
+        
         Vector3 currentRotation = transform.eulerAngles;
 
         if (agent.velocity.x > 0.01f)
@@ -110,7 +110,7 @@ public class NPCController : MonoBehaviour
         }
     }
 
-    // 🔍 INVESTIGATE LOGIC
+    
     void HandleInvestigate()
     {
         if (!isWaitingAtPoint)
@@ -140,7 +140,7 @@ public class NPCController : MonoBehaviour
         }
     }
 
-    // 🚶 PATROL
+   
     void Patrol()
     {
         if (waypoints.Length > 0)
@@ -172,13 +172,13 @@ public class NPCController : MonoBehaviour
         waiting = false;
     }
 
-    // 🔥 CHASE
+    
     public void StartChase()
     {
         if (isChasing) return;
 
         isChasing = true;
-        isInvestigating = false; // stop investigate
+        isInvestigating = false;
         MusicManager.instance.StartChase();
     }
 
@@ -195,7 +195,7 @@ public class NPCController : MonoBehaviour
         }
     }
 
-    // ⚙️ DDA SPEED
+    
     void UpdateSpeed()
     {
         if (ddaManager == null) return;
@@ -230,7 +230,7 @@ public class NPCController : MonoBehaviour
         return isChasing;
     }
 
-    // 👀 DEBUG RADIUS
+    
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;

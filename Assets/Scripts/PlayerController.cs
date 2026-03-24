@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
             canSprint = true;
 
         IsSprinting = Input.GetKey(KeyCode.LeftShift) && canSprint;
-bool sprinting = IsSprinting;
+        bool sprinting = IsSprinting;
         float currentSpeed = sprinting ? speed * sprintMultiplier : speed;
 
         rb.linearVelocity = movement * currentSpeed;
