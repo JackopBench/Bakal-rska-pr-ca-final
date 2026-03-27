@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorInteract : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class DoorInteract : MonoBehaviour
 
     public GameManager gameManager;
     public KeyCounter keyCounter;
+    public FadeManager fadeManager;
 
     void Start()
     {
@@ -44,6 +46,8 @@ public class DoorInteract : MonoBehaviour
 
         if (keyCounter == null)
             Debug.LogError("KeyCounter not found!");
+        if (fadeManager == null)
+            fadeManager = FindFirstObjectByType<FadeManager>();
     }   
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -80,7 +84,7 @@ public class DoorInteract : MonoBehaviour
                 return;
             }
 
-            gameManager.WinGame();
+            fadeManager.FadeToScene("Gamescene1");
         }
     }
 }
