@@ -75,16 +75,21 @@ public class DoorInteract : MonoBehaviour
     }
 
     void Update()
+{
+    if (playerInRange && Input.GetKeyDown(KeyCode.E))
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        if (keyCounter.currentKeys < keyCounter.maxKeys)
         {
-            if (keyCounter.currentKeys < keyCounter.maxKeys)
-            {
-                keyCounter.ShakeText();
-                return;
-            }
-
-            fadeManager.FadeToScene("Gamescene1");
+            keyCounter.ShakeText();
+            return;
         }
+
+        if (interactText != null)
+            interactText.SetActive(false);
+            
+        DDAManager.instance.OnLevelCompleted();
+        DDAManager.instance.OnSceneTransition();
+        fadeManager.FadeToScene("Gamescene1");
     }
+}
 }

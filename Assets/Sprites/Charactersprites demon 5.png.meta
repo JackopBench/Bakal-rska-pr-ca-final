@@ -1,0 +1,1989 @@
+fileFormatVersion: 2
+guid: c5b70e1234f07cb49af1ddf017c7601c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8756565253996265741
+    second: Charactersprites demon 5_0
+  - first:
+      213: -1961812972944742546
+    second: Charactersprites demon 5_1
+  - first:
+      213: 6556685544160277552
+    second: Charactersprites demon 5_2
+  - first:
+      213: -1102042017393518929
+    second: Charactersprites demon 5_3
+  - first:
+      213: -4155569492741265496
+    second: Charactersprites demon 5_4
+  - first:
+      213: 7582168229471986980
+    second: Charactersprites demon 5_5
+  - first:
+      213: -812294510212085639
+    second: Charactersprites demon 5_6
+  - first:
+      213: 1483036770497912100
+    second: Charactersprites demon 5_7
+  - first:
+      213: 8229251153712996835
+    second: Charactersprites demon 5_8
+  - first:
+      213: 7046625634392908217
+    second: Charactersprites demon 5_9
+  - first:
+      213: 3371714699557530571
+    second: Charactersprites demon 5_10
+  - first:
+      213: -8936215639892440018
+    second: Charactersprites demon 5_11
+  - first:
+      213: -435342703926719430
+    second: Charactersprites demon 5_12
+  - first:
+      213: -8434928888462504228
+    second: Charactersprites demon 5_13
+  - first:
+      213: -1843393205208314928
+    second: Charactersprites demon 5_14
+  - first:
+      213: -7058678982451758723
+    second: Charactersprites demon 5_15
+  - first:
+      213: 504961898264729109
+    second: Charactersprites demon 5_16
+  - first:
+      213: 3465336887669293033
+    second: Charactersprites demon 5_17
+  - first:
+      213: 5266274057984887769
+    second: Charactersprites demon 5_18
+  - first:
+      213: -6949832948018311807
+    second: Charactersprites demon 5_19
+  - first:
+      213: -5485549924326925726
+    second: Charactersprites demon 5_20
+  - first:
+      213: -3618145988929970463
+    second: Charactersprites demon 5_21
+  - first:
+      213: -668807475473853280
+    second: Charactersprites demon 5_22
+  - first:
+      213: -5868111017568179975
+    second: Charactersprites demon 5_23
+  - first:
+      213: -2281344786639931026
+    second: Charactersprites demon 5_24
+  - first:
+      213: -5672066114658929074
+    second: Charactersprites demon 5_25
+  - first:
+      213: -6622677683040959681
+    second: Charactersprites demon 5_26
+  - first:
+      213: -4043168391950776654
+    second: Charactersprites demon 5_27
+  - first:
+      213: 7937267729027302940
+    second: Charactersprites demon 5_28
+  - first:
+      213: -5295114250184946966
+    second: Charactersprites demon 5_29
+  - first:
+      213: 1594093843268298346
+    second: Charactersprites demon 5_30
+  - first:
+      213: -1396067641032707045
+    second: Charactersprites demon 5_31
+  - first:
+      213: -8955701280795227279
+    second: Charactersprites demon 5_32
+  - first:
+      213: -5758217197761353217
+    second: Charactersprites demon 5_33
+  - first:
+      213: -481061682021370760
+    second: Charactersprites demon 5_34
+  - first:
+      213: 6682163807218996547
+    second: Charactersprites demon 5_35
+  - first:
+      213: -2528519532413066327
+    second: Charactersprites demon 5_36
+  - first:
+      213: -5755975684344225019
+    second: Charactersprites demon 5_37
+  - first:
+      213: -9170988562178215712
+    second: Charactersprites demon 5_38
+  - first:
+      213: -6418692355991703349
+    second: Charactersprites demon 5_39
+  - first:
+      213: 659770829805667254
+    second: Charactersprites demon 5_40
+  - first:
+      213: 830092614010300815
+    second: Charactersprites demon 5_41
+  - first:
+      213: -2365486378053534926
+    second: Charactersprites demon 5_42
+  - first:
+      213: -3197644937632199317
+    second: Charactersprites demon 5_43
+  - first:
+      213: 1698904323429455706
+    second: Charactersprites demon 5_44
+  - first:
+      213: 7592305858399596908
+    second: Charactersprites demon 5_45
+  - first:
+      213: -2756534450352401304
+    second: Charactersprites demon 5_46
+  - first:
+      213: 2468752952380934329
+    second: Charactersprites demon 5_47
+  - first:
+      213: -1199080424419426158
+    second: Charactersprites demon 5_48
+  - first:
+      213: -906728450885411792
+    second: Charactersprites demon 5_49
+  - first:
+      213: -3281459901544876795
+    second: Charactersprites demon 5_50
+  - first:
+      213: 3826914700573922692
+    second: Charactersprites demon 5_51
+  - first:
+      213: 2201482814504156672
+    second: Charactersprites demon 5_52
+  - first:
+      213: 4709969089301850370
+    second: Charactersprites demon 5_53
+  - first:
+      213: 6407948436445381438
+    second: Charactersprites demon 5_54
+  - first:
+      213: -4138895081422650320
+    second: Charactersprites demon 5_55
+  - first:
+      213: 2593703239053668671
+    second: Charactersprites demon 5_56
+  - first:
+      213: 3476545120586896068
+    second: Charactersprites demon 5_57
+  - first:
+      213: -3195060955440409179
+    second: Charactersprites demon 5_58
+  - first:
+      213: 9170819271648814226
+    second: Charactersprites demon 5_59
+  - first:
+      213: 2439425960235138278
+    second: Charactersprites demon 5_60
+  - first:
+      213: 8342135669678024439
+    second: Charactersprites demon 5_61
+  - first:
+      213: 8772860694722209397
+    second: Charactersprites demon 5_62
+  - first:
+      213: -187799126275172378
+    second: Charactersprites demon 5_63
+  - first:
+      213: 2514971380178120555
+    second: Charactersprites demon 5_64
+  - first:
+      213: 2525410190963280982
+    second: Charactersprites demon 5_65
+  - first:
+      213: 7760211749881683096
+    second: Charactersprites demon 5_66
+  - first:
+      213: 2255130410745869097
+    second: Charactersprites demon 5_67
+  - first:
+      213: 2477101458446994918
+    second: Charactersprites demon 5_68
+  - first:
+      213: 174727700857610811
+    second: Charactersprites demon 5_69
+  - first:
+      213: -6140622895267369993
+    second: Charactersprites demon 5_70
+  - first:
+      213: -1715948839915777607
+    second: Charactersprites demon 5_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Charactersprites demon 5_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 337
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe3607bb4e6a7680800000000000000
+      internalID: -8756565253996265741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 336
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6720e7ce7d36c4e0800000000000000
+      internalID: -1961812972944742546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 336
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034bc9b73c60efa50800000000000000
+      internalID: 6556685544160277552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 337
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa654b1cf92c4b0f0800000000000000
+      internalID: -1102042017393518929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_4
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 336
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7e4b140937456c0800000000000000
+      internalID: -4155569492741265496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_5
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 336
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4252ee825d5493960800000000000000
+      internalID: 7582168229471986980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 335
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9780fc952762ab4f0800000000000000
+      internalID: -812294510212085639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 337
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42dde56d51ec49410800000000000000
+      internalID: 1483036770497912100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_8
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 335
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e16988e25c243270800000000000000
+      internalID: 8229251153712996835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_9
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 288
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1a62b0ea4aac160800000000000000
+      internalID: 7046625634392908217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_10
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 289
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcbe617b7acbace20800000000000000
+      internalID: 3371714699557530571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_11
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 290
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ccbebb83f2cf380800000000000000
+      internalID: -8936215639892440018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_12
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 288
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3cc3e80e1a55f9f0800000000000000
+      internalID: -435342703926719430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_13
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 289
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde0389bddc11fa80800000000000000
+      internalID: -8434928888462504228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_14
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 290
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db803685a3fa66e0800000000000000
+      internalID: -1843393205208314928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 290
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79727b2dd88a0e90800000000000000
+      internalID: -7058678982451758723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_16
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 290
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5161d2bcb2cf10700800000000000000
+      internalID: 504961898264729109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_17
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 288
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eff5980a89571030800000000000000
+      internalID: 3465336887669293033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 242
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db4b049a50951940800000000000000
+      internalID: 5266274057984887769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_19
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 241
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d001d61cb3d8f90800000000000000
+      internalID: -6949832948018311807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_20
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 240
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a92d258696fd3b0800000000000000
+      internalID: -5485549924326925726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 242
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee13509463c9cdc0800000000000000
+      internalID: -3618145988929970463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_22
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 241
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a45141052be7b6f0800000000000000
+      internalID: -668807475473853280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_23
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 240
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8ea4fbe18409ea0800000000000000
+      internalID: -5868111017568179975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69332ee0090750e0800000000000000
+      internalID: -2281344786639931026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_25
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 242
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46793dabe5c841b0800000000000000
+      internalID: -5672066114658929074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_26
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 242
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33cf685cb58714a0800000000000000
+      internalID: -6622677683040959681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_27
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 193
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6cfa6e4c7c3e7c0800000000000000
+      internalID: -4043168391950776654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_28
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 193
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1608d332f6d62e60800000000000000
+      internalID: 7937267729027302940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_29
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 192
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea0e98e4a9f386b0800000000000000
+      internalID: -5295114250184946966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_30
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 193
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66e4a297eb5f1610800000000000000
+      internalID: 1594093843268298346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_31
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 193
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14f3dd80eb20ace0800000000000000
+      internalID: -1396067641032707045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_32
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 192
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b80bb6225f6b380800000000000000
+      internalID: -8955701280795227279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_33
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 191
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9a3eb87f3b610b0800000000000000
+      internalID: -5758217197761353217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_34
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 195
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8747010f2fce259f0800000000000000
+      internalID: -481061682021370760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_35
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 191
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345924c3490dbbc50800000000000000
+      internalID: 6682163807218996547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 153
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3e1e6c1e4e8ecd0800000000000000
+      internalID: -2528519532413066327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 153
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50360ee8c9aae10b0800000000000000
+      internalID: -5755975684344225019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_38
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 153
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e072302e7a1ab080800000000000000
+      internalID: -9170988562178215712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 143
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc079965f493ce6a0800000000000000
+      internalID: -6418692355991703349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 145
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b34bb7f21af72900800000000000000
+      internalID: 659770829805667254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_41
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 143
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8962cc95d4158b00800000000000000
+      internalID: 830092614010300815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_42
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 143
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bf71b0caa1c2fd0800000000000000
+      internalID: -2365486378053534926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_43
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 144
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d4b9efedeaf93d0800000000000000
+      internalID: -3197644937632199317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_44
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 143
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5753612b78b39710800000000000000
+      internalID: 1698904323429455706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_45
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 104
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c617604d3f94d5960800000000000000
+      internalID: 7592305858399596908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_46
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 106
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8645e9ba582deb9d0800000000000000
+      internalID: -2756534450352401304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_47
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 106
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8ccdceab5c24220800000000000000
+      internalID: 2468752952380934329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_48
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 98
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2900b5df4b20c5fe0800000000000000
+      internalID: -1199080424419426158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_49
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 98
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c1c392747aa63f0800000000000000
+      internalID: -906728450885411792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_50
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 96
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505babffa99e572d0800000000000000
+      internalID: -3281459901544876795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_51
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 98
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485dd61f4aeeb1530800000000000000
+      internalID: 3826914700573922692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_52
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 98
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00eb5a1b4fc3d8e10800000000000000
+      internalID: 2201482814504156672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_53
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 96
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20928e6aeeb2d5140800000000000000
+      internalID: 4709969089301850370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_54
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 58
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33c855f62b9de850800000000000000
+      internalID: 6407948436445381438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_55
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 58
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034013d2ad0bf86c0800000000000000
+      internalID: -4138895081422650320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_56
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 56
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31f2989a5faef320800000000000000
+      internalID: 2593703239053668671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2133e1e5b2f3030800000000000000
+      internalID: 3476545120586896068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_58
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 50
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5114b3dfcd8a3d0800000000000000
+      internalID: -3195060955440409179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_59
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 50
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2942fe9d98b454f70800000000000000
+      internalID: 9170819271648814226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_60
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec7ea77cf49ad120800000000000000
+      internalID: 2439425960235138278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_61
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 50
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6264b613835c370800000000000000
+      internalID: 8342135669678024439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_62
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 50
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57667ec32567fb970800000000000000
+      internalID: 8772860694722209397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_63
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 14
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e75d3d80bdc46df0800000000000000
+      internalID: -187799126275172378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 14
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f6ac73529f6e220800000000000000
+      internalID: 2514971380178120555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_65
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 16
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c8480403f0c0320800000000000000
+      internalID: 2525410190963280982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_66
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c928d987fc1bb60800000000000000
+      internalID: 7760211749881683096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92330be0925db4f10800000000000000
+      internalID: 2255130410745869097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_68
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6edc557f6ae606220800000000000000
+      internalID: 2477101458446994918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_69
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 0
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32e90e0be1cc6200800000000000000
+      internalID: 174727700857610811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_70
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 3
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb25fbd20028caa0800000000000000
+      internalID: -6140622895267369993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charactersprites demon 5_71
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b193102f99bf28e0800000000000000
+      internalID: -1715948839915777607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Charactersprites demon 5_0: -8756565253996265741
+      Charactersprites demon 5_1: -1961812972944742546
+      Charactersprites demon 5_10: 3371714699557530571
+      Charactersprites demon 5_11: -8936215639892440018
+      Charactersprites demon 5_12: -435342703926719430
+      Charactersprites demon 5_13: -8434928888462504228
+      Charactersprites demon 5_14: -1843393205208314928
+      Charactersprites demon 5_15: -7058678982451758723
+      Charactersprites demon 5_16: 504961898264729109
+      Charactersprites demon 5_17: 3465336887669293033
+      Charactersprites demon 5_18: 5266274057984887769
+      Charactersprites demon 5_19: -6949832948018311807
+      Charactersprites demon 5_2: 6556685544160277552
+      Charactersprites demon 5_20: -5485549924326925726
+      Charactersprites demon 5_21: -3618145988929970463
+      Charactersprites demon 5_22: -668807475473853280
+      Charactersprites demon 5_23: -5868111017568179975
+      Charactersprites demon 5_24: -2281344786639931026
+      Charactersprites demon 5_25: -5672066114658929074
+      Charactersprites demon 5_26: -6622677683040959681
+      Charactersprites demon 5_27: -4043168391950776654
+      Charactersprites demon 5_28: 7937267729027302940
+      Charactersprites demon 5_29: -5295114250184946966
+      Charactersprites demon 5_3: -1102042017393518929
+      Charactersprites demon 5_30: 1594093843268298346
+      Charactersprites demon 5_31: -1396067641032707045
+      Charactersprites demon 5_32: -8955701280795227279
+      Charactersprites demon 5_33: -5758217197761353217
+      Charactersprites demon 5_34: -481061682021370760
+      Charactersprites demon 5_35: 6682163807218996547
+      Charactersprites demon 5_36: -2528519532413066327
+      Charactersprites demon 5_37: -5755975684344225019
+      Charactersprites demon 5_38: -9170988562178215712
+      Charactersprites demon 5_39: -6418692355991703349
+      Charactersprites demon 5_4: -4155569492741265496
+      Charactersprites demon 5_40: 659770829805667254
+      Charactersprites demon 5_41: 830092614010300815
+      Charactersprites demon 5_42: -2365486378053534926
+      Charactersprites demon 5_43: -3197644937632199317
+      Charactersprites demon 5_44: 1698904323429455706
+      Charactersprites demon 5_45: 7592305858399596908
+      Charactersprites demon 5_46: -2756534450352401304
+      Charactersprites demon 5_47: 2468752952380934329
+      Charactersprites demon 5_48: -1199080424419426158
+      Charactersprites demon 5_49: -906728450885411792
+      Charactersprites demon 5_5: 7582168229471986980
+      Charactersprites demon 5_50: -3281459901544876795
+      Charactersprites demon 5_51: 3826914700573922692
+      Charactersprites demon 5_52: 2201482814504156672
+      Charactersprites demon 5_53: 4709969089301850370
+      Charactersprites demon 5_54: 6407948436445381438
+      Charactersprites demon 5_55: -4138895081422650320
+      Charactersprites demon 5_56: 2593703239053668671
+      Charactersprites demon 5_57: 3476545120586896068
+      Charactersprites demon 5_58: -3195060955440409179
+      Charactersprites demon 5_59: 9170819271648814226
+      Charactersprites demon 5_6: -812294510212085639
+      Charactersprites demon 5_60: 2439425960235138278
+      Charactersprites demon 5_61: 8342135669678024439
+      Charactersprites demon 5_62: 8772860694722209397
+      Charactersprites demon 5_63: -187799126275172378
+      Charactersprites demon 5_64: 2514971380178120555
+      Charactersprites demon 5_65: 2525410190963280982
+      Charactersprites demon 5_66: 7760211749881683096
+      Charactersprites demon 5_67: 2255130410745869097
+      Charactersprites demon 5_68: 2477101458446994918
+      Charactersprites demon 5_69: 174727700857610811
+      Charactersprites demon 5_7: 1483036770497912100
+      Charactersprites demon 5_70: -6140622895267369993
+      Charactersprites demon 5_71: -1715948839915777607
+      Charactersprites demon 5_8: 8229251153712996835
+      Charactersprites demon 5_9: 7046625634392908217
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

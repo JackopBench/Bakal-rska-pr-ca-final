@@ -11,7 +11,7 @@ public class BarController : MonoBehaviour
     private bool filling = false;
     private bool hasChased = false;
 
-    public NPCController npcController;
+    public EnemyBase enemy;
     public DDAManager ddaManager; 
 
     private float chaseTimer = 0f;
@@ -31,6 +31,9 @@ public class BarController : MonoBehaviour
 
     void Update()
     {
+        if (ddaManager == null)
+            ddaManager = DDAManager.instance;
+        
         if (ddaManager != null)
         {
             int difficulty = ddaManager.GetDifficultyLevel();
@@ -64,29 +67,24 @@ public class BarController : MonoBehaviour
         
         if (leftBar.fillAmount >= 1f && !hasChased)
         {
-            npcController.StartChase();
+            enemy.OnBarFilled();
             hasChased = true;
             chaseTimer = 0f;
         }
 
         
         if (leftBar.fillAmount <= 0f && hasChased)
-        {
-            NPCController[] npcs = FindObjectsByType<NPCController>(FindObjectsSortMode.None);
+{
+    enemy.OnBarEmpty();
 
-            foreach (var npc in npcs)
-            {
-                npc.StopChase();
-            }
+    if (chaseTimer >= minChaseTime && ddaManager != null)
+    {
+        ddaManager.OnEnemyEscaped(); 
+    }
 
-            if (chaseTimer >= minChaseTime && ddaManager != null)
-            {
-                ddaManager.OnEnemyEscaped(); 
-            }
-
-            hasChased = false;
-            chaseTimer = 0f;
-        }
+    hasChased = false;
+    chaseTimer = 0f;
+}
     }
 
     public void StartFilling()

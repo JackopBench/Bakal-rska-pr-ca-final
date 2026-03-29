@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NPCController : EnemyBase
+public class NPCController2 : EnemyBase
 {
     [Header("Patrol")]
     public Transform[] waypoints;
@@ -11,15 +11,13 @@ public class NPCController : EnemyBase
     private int currentIndex = 0;
     private float waitCounter;
     private bool waiting;
+    private Transform spriteTransform;
 
     [Header("Player")]
     public Transform player;
     private PlayerController playerController;
 
-    [Header("States")]
-    private bool isChasing = false;
-
-    
+    [Header("Hearing")]
     public float hearingRadius = 10f;
     public float investigateWaitTime = 2f;
 
@@ -32,18 +30,36 @@ public class NPCController : EnemyBase
     [Header("DDA")]
     public DDAManager ddaManager;
     public float baseSpeed = 2f;
-    public float maxSpeed = 6f;
 
     public float minHearingRadius = 5f;
     public float maxHearingRadius = 12f;
 
+    [Header("Bar Sound")]
+    public AudioSource audioSource;
+    public AudioClip barFilledSound;
+
     private Animator animator;
+
+    [Header("Stun")]
+    public float stunTime = 4f;
+    private float stunTimer;
+    private bool isStunned = false;
+
+
+
+    string GetSpawner()
+    {
+        var stack = System.Environment.StackTrace;
+        return stack;
+    }
 
     void Start()
     {
         ddaManager = FindFirstObjectByType<DDAManager>();
+
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
+        spriteTransform = animator.transform;
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
 
@@ -64,13 +80,23 @@ public class NPCController : EnemyBase
 
     void Update()
     {
+        if (isStunned)
+{
+    stunTimer -= Time.deltaTime;
+
+    if (stunTimer <= 0f)
+    {
+        isStunned = false;
+        agent.isStopped = false;
+    }
+
+    return;
+}
         UpdateSpeed();
 
-        animator.SetBool("isChasing", isChasing);
         animator.SetBool("isInvestigating", isInvestigating);
 
-        
-        if (!isChasing && !isInvestigating && playerController != null)
+        if (!isInvestigating && playerController != null)
         {
             float distance = Vector3.Distance(transform.position, player.position);
 
@@ -82,13 +108,7 @@ public class NPCController : EnemyBase
             }
         }
 
-        
-        if (isChasing)
-        {
-            agent.speed = baseSpeed * 1.3f;
-            agent.SetDestination(player.position);
-        }
-        else if (isInvestigating)
+        if (isInvestigating)
         {
             HandleInvestigate();
         }
@@ -97,20 +117,9 @@ public class NPCController : EnemyBase
             Patrol();
         }
 
-        
-        Vector3 currentRotation = transform.eulerAngles;
-
-        if (agent.velocity.x > 0.01f)
-        {
-            transform.rotation = Quaternion.Euler(currentRotation.x, 0f, currentRotation.z);
-        }
-        else if (agent.velocity.x < -0.01f)
-        {
-            transform.rotation = Quaternion.Euler(currentRotation.x, -180f, currentRotation.z);
-        }
+        FlipSprite();
     }
 
-    
     void HandleInvestigate()
     {
         if (!isWaitingAtPoint)
@@ -140,7 +149,6 @@ public class NPCController : EnemyBase
         }
     }
 
-   
     void Patrol()
     {
         if (waypoints.Length > 0)
@@ -172,30 +180,6 @@ public class NPCController : EnemyBase
         waiting = false;
     }
 
-    
-    public void StartChase()
-    {
-        if (isChasing) return;
-
-        isChasing = true;
-        isInvestigating = false;
-        MusicManager.instance.StartChase();
-    }
-
-    public void StopChase()
-    {
-        if (!isChasing) return;
-
-        isChasing = false;
-        MusicManager.instance.StopChase();
-
-        if (waypoints.Length > 0)
-        {
-            agent.SetDestination(waypoints[currentIndex].position);
-        }
-    }
-
-    
     void UpdateSpeed()
     {
         if (ddaManager == null) return;
@@ -217,20 +201,12 @@ public class NPCController : EnemyBase
             default: baseSpeed = 2f; break;
         }
 
-        if (!isChasing)
-        {
-            agent.speed = baseSpeed;
-        }
+        agent.speed = baseSpeed;
+
         float t = (difficulty - 1) / 9f;
         hearingRadius = Mathf.Lerp(minHearingRadius, maxHearingRadius, t);
     }
 
-    public bool IsChasing()
-    {
-        return isChasing;
-    }
-
-    
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
@@ -240,13 +216,39 @@ public class NPCController : EnemyBase
         Gizmos.DrawSphere(investigatePosition, 0.2f);
     }
 
+    void FlipSprite()
+    {
+        if (agent.velocity.x > 0.05f)
+        {
+            spriteTransform.localScale = new Vector3(-1, 1, 1);
+        }
+        else if (agent.velocity.x < -0.05f)
+        {
+            spriteTransform.localScale = new Vector3(1, 1, 1);
+        }
+    }
+
+    // ================================
+    // EnemyBase IMPLEMENTATION
+    // ================================
+
     public override void OnBarFilled()
 {
-    StartChase();
+
+    if (audioSource != null && barFilledSound != null)
+    {
+        audioSource.PlayOneShot(barFilledSound);
+    }
+
+    animator.SetTrigger("StunTrigger");
+
+    isStunned = true;
+    stunTimer = stunTime;
+    agent.isStopped = true;
 }
 
-public override void OnBarEmpty()
-{
-    StopChase();
-}
+    public override void OnBarEmpty()
+    {
+        
+    }
 }

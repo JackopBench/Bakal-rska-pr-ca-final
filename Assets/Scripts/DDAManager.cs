@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DDAManager : MonoBehaviour
 {
+    public static DDAManager instance;
     // DificultyScore premenne
     public float difficultyScore = 50f;
     public float minScore = 0f;
@@ -13,7 +14,7 @@ public class DDAManager : MonoBehaviour
     public float timeSinceLastHit = 15f;
 
     // Player escape
-    public float escapeReward = 5f;
+    public float escapeReward = 3f;
 
     // No progress
     public float noProgressThreshold = 20f;
@@ -21,7 +22,18 @@ public class DDAManager : MonoBehaviour
     private float timeSinceLastProgress = 20f;
     private int lastDifficulty = -1;
 
-    
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Update()
     {
         int currentDifficulty = GetDifficultyLevel();
@@ -113,6 +125,24 @@ public class DDAManager : MonoBehaviour
     ClampScore();
 
     Debug.Log($"[DDA] Game Over → {change} | Score: {difficultyScore}");
+}
+
+public void OnSceneTransition()
+{
+    float change = 10f;
+    difficultyScore += change;
+    ClampScore();
+
+    Debug.Log($"[DDA] Scene transition → +{change} | Score: {difficultyScore}");
+}
+
+public void OnLevelCompleted()
+{
+    float change = 10f;
+    difficultyScore += change;
+    ClampScore();
+
+    Debug.Log($"[DDA] Level completed → +{change} | Score: {difficultyScore}");
 }
 
     public int GetDifficultyLevel()

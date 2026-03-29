@@ -3,19 +3,19 @@ using UnityEngine;
 public class SpotZone : MonoBehaviour
 {
     private BarController barController;
-    private NPCController npcController;
+    private EnemyBase enemy;
 
     void Start()
     {
         barController = FindFirstObjectByType<BarController>();
-        npcController = GetComponentInParent<NPCController>();
+        enemy = GetComponentInParent<EnemyBase>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            barController.npcController = npcController;
+            barController.enemy = enemy;
             barController.StartFilling();
         }
     }
