@@ -15,8 +15,7 @@ public class SpotZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            barController.enemy = enemy;
-            barController.StartFilling();
+            barController.StartFilling(enemy);
         }
     }
 
@@ -24,7 +23,7 @@ public class SpotZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            barController.StopFilling();
+            barController.StopFilling(enemy);
         }
     }
 }

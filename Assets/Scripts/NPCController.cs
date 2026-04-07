@@ -39,8 +39,12 @@ public class NPCController : EnemyBase
 
     private Animator animator;
 
+    private bool isAlerted = false;
+    private Vector3 alertPosition;
+
     void Start()
     {
+        EnemyAlertSystem.OnPlayerSpotted += OnPlayerSpotted;
         ddaManager = FindFirstObjectByType<DDAManager>();
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
@@ -88,12 +92,22 @@ public class NPCController : EnemyBase
             agent.speed = baseSpeed * 1.3f;
             agent.SetDestination(player.position);
         }
+        else if (isAlerted)
+{
+    agent.SetDestination(alertPosition);
+
+    if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+    {
+        isAlerted = false;
+    }
+}
         else if (isInvestigating)
         {
             HandleInvestigate();
         }
         else
         {
+            
             Patrol();
         }
 
@@ -248,5 +262,16 @@ public class NPCController : EnemyBase
 public override void OnBarEmpty()
 {
     StopChase();
+}
+void OnDestroy()
+{
+    EnemyAlertSystem.OnPlayerSpotted -= OnPlayerSpotted;
+}
+void OnPlayerSpotted(Vector3 playerPosition)
+{
+    isAlerted = true;
+    alertPosition = playerPosition;
+
+    agent.SetDestination(alertPosition);
 }
 }

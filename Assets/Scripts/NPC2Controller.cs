@@ -234,6 +234,7 @@ public class NPCController2 : EnemyBase
 
     public override void OnBarFilled()
 {
+    EnemyAlertSystem.AlertEnemies(player.position);
 
     if (audioSource != null && barFilledSound != null)
     {
