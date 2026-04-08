@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7496551805625785445}
   - component: {fileID: 4067063276395339289}
+  - component: {fileID: 587688509295211887}
   m_Layer: 0
   m_Name: pivot
   m_TagString: Untagged
@@ -79,6 +80,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.4362793, y: 0.35484314}
   m_EdgeRadius: 0
+--- !u!114 &587688509295211887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875224113810328754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4190e9512b49b46a5badaa5bb54eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PivotRotation
 --- !u!1 &1648490400784373070
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +330,7 @@ MonoBehaviour:
   maxHearingRadius: 12
   audioSource: {fileID: 5196572173181799239}
   barFilledSound: {fileID: 8300000, guid: a47a4a87fcb4f524d9a83e63db4fbde5, type: 3}
+  stunTime: 4
 --- !u!82 &5196572173181799239
 AudioSource:
   m_ObjectHideFlags: 0
