@@ -54,4 +54,6 @@ public class KeyCounter : MonoBehaviour
     {
         keyText.text = currentKeys + " / " + maxKeys;
     }
+
+
 }

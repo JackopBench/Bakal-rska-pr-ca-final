@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1146995010950347260}
   - component: {fileID: 3690368132784016946}
   - component: {fileID: 8484464563598987267}
+  - component: {fileID: 1643638828441435944}
   m_Layer: 0
   m_Name: Doors
   m_TagString: Untagged
@@ -156,3 +157,18 @@ MonoBehaviour:
   highlightColor: {r: 0.7607843, g: 1, b: 0.7607843, a: 1}
   gameManager: {fileID: 0}
   keyCounter: {fileID: 0}
+  fadeManager: {fileID: 0}
+--- !u!114 &1643638828441435944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7757811584953602338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42d08ba9f3dfe7e4d80ff58fd225d3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorWinTrigger
+  keyCounter: {fileID: 0}
+  winManager: {fileID: 0}

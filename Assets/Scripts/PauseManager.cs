@@ -54,6 +54,17 @@ public class PauseManager : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    public void RestartGame()   
+    {
+        Time.timeScale = 1f;
+
+        if (MusicManager.instance != null)
+        {
+            MusicManager.instance.PlayBackgroundMusic();
+        }
+
+        SceneManager.LoadScene("GameScene");
+    }
 
     public void LoadMenu()
     {
